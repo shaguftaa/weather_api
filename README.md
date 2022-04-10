@@ -13,20 +13,25 @@ You can start using it immediately!
 
 ### Endpoints
 Different endpoints available in the <b>weather_api</b>
-
-- http://localhost:5000/forecast/location_list
-<br>
-    List all the available locations to get weather forecast.
-<br>
-- http://localhost:5000/forecast/&lt;location-id&gt;
-<br>
-Return weather forecast for specific region 
-<br>
-- http://localhost:5000/forecast/
-<br>
-Return weather forecast for all the available regions
-<br>
-
+<ol>
+    <li><b>http://localhost:5000/forecast/location_list</b>
+        <br>
+            List all the available locations to get weather forecast.
+        <br>
+    </li>
+    <li>
+    <b>http://localhost:5000/forecast/&lt;location-id&gt;</b>
+        <br>
+            Return weather forecast for specific region 
+        <br>
+    </li>
+    <li>
+    <b>http://localhost:5000/forecast/</b>
+        <br>
+        Return weather forecast for all the available regions
+        <br>
+    </li>
+</ol>
 
 ### Installation
 ##### 1. Git clone the application
