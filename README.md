@@ -1,9 +1,39 @@
 
-## Git clone the application
 
-## Create a virtual environment inside the application 
+### Overview
+Regional Weather forecast APIs to get weather related data. API key is required. 
 
-```python
+You can start using it immediately!
+
+### Features
+- Weather forecast for 30 days
+- Location-wise weather forecast available
+- Provide date-wise weather description
+- Get list of all the available regions
+
+### Endpoints
+Different endpoints available in the <b>weather_api</b>
+
+- http://localhost:5000/forecast/location_list
+<br>
+    List all the available locations to get weather forecast.
+<br>
+- http://localhost:5000/forecast/&lt;location-id&gt;
+<br>
+Return weather forecast for specific region 
+<br>
+- http://localhost:5000/forecast/
+<br>
+Return weather forecast for all the available regions
+<br>
+
+
+### Installation
+##### 1. Git clone the application
+
+##### 2. Create a virtual environment inside the application 
+
+```
 
     virtualenv -p /usr/bin/python3 venv    
 
@@ -11,35 +41,37 @@
 
 ```
 
-## Install Python modules
+##### 3. Install Python modules
 
-```python
+```
 
    pip3 install -r requirements.txt 
     
 ```
 
 
-## Run the application using
+##### 4. Run the application using
 
-```python
+```
 
     python app.py
 
 ```
 
 
-## You will get below REST API
-
-```python
-
-        http://localhost:5000
+##### 5. You will get below REST API
 
 ```
 
-## Docker commands
+    http://localhost:5000/forecast/location_list
+    http://localhost:5000/forecast/
+    http://localhost:5000/forecast/<location-id>
 
-```bash
+```
+
+##### 6. Using Docker commands
+
+```
     
         // List all running container
         docker ps
@@ -62,3 +94,9 @@
 
 
 ```
+
+
+### Reference
+
+https://www.metoffice.gov.uk/services/data/datapoint/api-reference#textual-data
+ 
